@@ -11,6 +11,8 @@ import ProjectDetail from './pages/ProjectDetail';
 
 import About from './pages/About';
 
+import Technologies from './pages/Technologies';
+
 export default function App() {
   return (
     <Layout>
@@ -34,12 +36,7 @@ export default function App() {
 
         <Route
           path="/tecnologias"
-          element={
-            <Placeholder
-              title="Tecnologías"
-              description="Explora las herramientas, arquitecturas y tecnologías industriales."
-            />
-          }
+          element={<Technologies />}
         />
 
         <Route
