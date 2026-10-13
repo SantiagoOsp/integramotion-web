@@ -1032,3 +1032,308 @@
     transition: none;
   }
 }
+
+/* ======================================
+   INTEGRAMOTION - ABOUT PAGE
+====================================== */
+
+.about-page {
+  background: #ffffff;
+}
+
+.about-hero {
+  background: #0b2d5b;
+  color: #ffffff;
+  padding: 110px 0;
+}
+
+.about-eyebrow {
+  display: block;
+  color: #007f91;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 18px;
+}
+
+.about-hero .about-eyebrow {
+  color: #67e8f9;
+}
+
+.about-hero h1 {
+  max-width: 900px;
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(34px, 4.5vw, 56px);
+  line-height: 1.18;
+  margin: 0 0 28px;
+}
+
+.about-hero p {
+  max-width: 720px;
+  color: #d2e1ed;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.about-identity,
+.about-values,
+.about-team {
+  padding: 96px 0;
+}
+
+.about-values {
+  background: #f4f7fa;
+}
+
+.about-section-heading {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.about-section-heading h2 {
+  color: #0b2d5b;
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.3;
+  margin: 0 0 16px;
+}
+
+.about-section-heading p {
+  color: #526779;
+  line-height: 1.7;
+}
+
+.about-identity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.about-info-card {
+  padding: 36px;
+  background: #f4f7fa;
+  border: 1px solid #dce4ec;
+  border-radius: 16px;
+}
+
+.about-info-card svg,
+.about-value-card svg {
+  color: #007f91;
+}
+
+.about-info-card h3,
+.about-value-card h3 {
+  color: #0b2d5b;
+  font-family: Montserrat, sans-serif;
+  font-size: 22px;
+  margin: 22px 0 12px;
+}
+
+.about-info-card p,
+.about-value-card p {
+  color: #526779;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-value-card {
+  background: #ffffff;
+  padding: 28px;
+  border: 1px solid #dce4ec;
+  border-radius: 14px;
+}
+
+.about-value-card h3 {
+  font-size: 18px;
+}
+
+/* Equipo */
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.about-member-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dce4ec;
+  border-radius: 16px;
+  transition: box-shadow 200ms ease;
+}
+
+.about-member-card:hover {
+  box-shadow: 0 12px 30px rgba(11, 45, 91, 0.1);
+}
+
+.about-member-photo {
+  aspect-ratio: 4 / 4;
+  background: #e3edf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b2d5b;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.about-member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-member-content {
+  padding: 26px;
+}
+
+.about-member-content h3 {
+  color: #0b2d5b;
+  font-size: 21px;
+  margin: 0 0 8px;
+}
+
+.about-member-content > span {
+  color: #007f91;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-member-content p {
+  color: #526779;
+  line-height: 1.7;
+  font-size: 14px;
+  margin: 16px 0 0;
+}
+
+.about-team-empty {
+  padding: 40px;
+  background: #f4f7fa;
+  border: 1px dashed #cbd7e2;
+  border-radius: 14px;
+  color: #526779;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 1023px) {
+  .about-values-grid,
+  .about-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    padding: 70px 0;
+  }
+
+  .about-identity,
+  .about-values,
+  .about-team {
+    padding: 60px 0;
+  }
+
+  .about-identity-grid,
+  .about-values-grid,
+  .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info-card {
+    padding: 26px;
+  }
+
+  .about-hero p {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-member-card {
+    transition: none;
+  }
+}
+
+/* ======================================
+   INTEGRAMOTION - TEAM PROFILES
+====================================== */
+
+.about-member-position {
+  display: inline-block;
+  color: #007f91;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-member-content h4 {
+  margin: 10px 0 0;
+  color: #0b2d5b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.about-member-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.about-member-content {
+  flex: 1;
+}
+
+/* IntegraMotion — Team refinement */
+
+.about-team-grid {
+  align-items: stretch;
+}
+
+.about-member-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-member-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #e3edf5;
+}
+
+.about-member-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.about-member-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 26px;
+}
+
+.about-member-content p {
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .about-member-content {
+    padding: 22px;
+  }
+}

@@ -9,6 +9,8 @@ import Projects from './pages/Projects';
 
 import ProjectDetail from './pages/ProjectDetail';
 
+import About from './pages/About';
+
 export default function App() {
   return (
     <Layout>
@@ -17,12 +19,7 @@ export default function App() {
 
         <Route
           path="/nosotros"
-          element={
-            <Placeholder
-              title="Nosotros"
-              description="Conoce el enfoque y las capacidades de IntegraMotion."
-            />
-          }
+          element={<About />}
         />
 
         <Route

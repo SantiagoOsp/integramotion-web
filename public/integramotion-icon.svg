@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-labelledby="title desc">
+  <title id="title">IntegraMotion — isotipo</title>
+  <desc id="desc">Monograma M geométrico formado por bandas industriales azules y cian, con nodos de conectividad.</desc>
+  <defs>
+    <linearGradient id="upper" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#00BCD4"/>
+      <stop offset="0.66" stop-color="#008AB8"/>
+      <stop offset="1" stop-color="#085486"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062A57"/>
+      <stop offset="1" stop-color="#007EA6"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#00679D"/>
+      <stop offset="0.52" stop-color="#00B6CE"/>
+      <stop offset="1" stop-color="#00CEE0"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123F73"/>
+      <stop offset="1" stop-color="#071F40"/>
+    </linearGradient>
+  </defs>
+  <!-- Upper rising band -->
+  <path d="M18 123 Q18 114 26 106 L127 15 Q133 9 144 9 H184 L199 26 L199 96 L153 142 L153 57 L18 177 Z" fill="url(#upper)"/>
+  <!-- Dark fold at the band turn -->
+  <path d="M178 9 H184 Q191 9 196 16 L210 31 Q212 34 212 41 V111 L179 142 V51 L153 57 Z" fill="url(#fold)"/>
+  <!-- Lower left navy trace -->
+  <path d="M18 195 L116 108 Q128 97 142 104 Q152 110 157 121 Q160 138 148 150 L18 251 Z" fill="url(#navy)"/>
+  <!-- Left connection circle, cut-out appearance on any background via filled center -->
+  <circle cx="127" cy="127" r="25" fill="url(#navy)"/>
+  <circle cx="127" cy="127" r="13" fill="#FFFFFF"/>
+  <!-- Central ascending ribbon -->
+  <path d="M160 167 L269 61 Q280 50 290 58 Q306 68 295 82 L171 210 Q157 226 147 216 Q141 211 141 200 V178 Q141 173 146 168 L160 153 Z" fill="url(#ribbon)"/>
+  <!-- Top right terminal -->
+  <circle cx="278" cy="64" r="25" fill="#00BCD4"/>
+  <circle cx="278" cy="64" r="13" fill="#FFFFFF"/>
+  <!-- Right closing navy segment -->
+  <path d="M299 91 V210 Q299 219 290 227 L252 258 V151 Z" fill="url(#navy)"/>
+</svg>
